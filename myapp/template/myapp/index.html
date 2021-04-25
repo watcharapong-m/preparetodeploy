@@ -1,0 +1,159 @@
+<style>
+    #year {
+        color: black;
+        font-size: medium;
+    }
+</style>
+{% extends 'myapp/dashboard.html' %} {% block content %} {% load static %}
+<div id="latest-blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading-section">
+                    <h2>หมวดหมู่</h2>
+                    <img src="{% static 'images/under-heading.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <ul>
+                <a href="/all">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="blog-post">
+                            <div class="blog-thumb">
+                                <img src="{% static 'images/1.png' %}" alt="" width="300" height="200" />
+                            </div>
+                            <div class="blog-content">
+                                <div class="content-show">
+                                    <h4>
+                                        <a href="/all">ทุกหมวดหมู่</a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="/entertainment">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="blog-post">
+                            <div class="blog-thumb">
+                                <img src="{% static 'images/2.png' %}" alt="" width="300" height="200" />
+                            </div>
+                            <div class="blog-content">
+                                <div class="content-show">
+                                    <h4>
+                                        <a href="/entertainment">บันเทิง</a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="/scienceadntecnology">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="blog-post">
+                            <div class="blog-thumb">
+                                <img src="{% static 'images/3.png' %}" alt="" width="100" height="200" />
+                            </div>
+                            <div class="blog-content">
+                                <div class="content-show">
+                                    <h4>
+                                        <a href="/scienceadntecnology">วิทยาศาสตร์และเทคโนโลยี</a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="/mobileapplication">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="blog-post">
+                            <div class="blog-thumb">
+                                <img src="{% static 'images/4.png' %}" alt="" width="100" height="200" />
+                            </div>
+                            <div class="blog-content">
+                                <div class="content-show">
+                                    <h4>
+                                        <a href="/mobileapplication">แอปพลิเคชันบนอุปกรณ์เคลื่อนที่</a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="/learning">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="blog-post">
+                            <div class="blog-thumb">
+                                <img src="{% static 'images/5.png' %}" alt="" width="100" height="200" />
+                            </div>
+                            <div class="blog-content">
+                                <div class="content-show">
+                                    <h4>
+                                        <a href="/learning">การเรียนรู้</a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="/disabledandelderly">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="blog-post">
+                            <div class="blog-thumb">
+                                <img src="{% static 'images/6.png' %}" alt="" width="100" height="200" />
+                            </div>
+                            <div class="blog-content">
+                                <div class="content-show">
+                                    <h4><a href="/disabledandelderly">ผู้สูงอายุและผู้พิการ</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+        </div>
+    </div>
+</div>
+
+
+<div id="testimonails">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading-section">
+                    <h2>ปีการศึกษา</h2>
+                    <img src="{% static 'images/under-heading.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="testimonails-slider">
+                    <div align="center">
+                        <a href="2563">
+                            <h3 id="year"><b>2563</b></h3>
+                        </a>
+                        <br>
+                        <a href="2564">
+                            <h3 id="year"><b>2564</b></h3>
+                        </a>
+                        <br>
+                        <a href="2565">
+                            <h3 id="year"><b>2565</b></h3>
+                        </a>
+                        <br>
+                        <a href="2566">
+                            <h3 id="year"><b>2567</b></h3>
+                        </a>
+                        <br>
+
+                        <a href="2567">
+                            <h3 id="year"><b>2567</b></h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
